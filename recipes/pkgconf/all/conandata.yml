@@ -1,21 +1,21 @@
 sources:
   "2.0.3":
-    url: "https://distfiles.ariadne.space/pkgconf/pkgconf-2.0.3.tar.xz"
-    sha256: "cabdf3c474529854f7ccce8573c5ac68ad34a7e621037535cbc3981f6b23836c"
+    url: "https://github.com/Hexagon-HTC/pkgconf/archive/refs/tags/pkgconf-2.0.3.tar.gz"
+    sha256: "d139baa5ea65e8bd9267f416c3bb88a91cf66f6bc84b1be0408cabfe886a4b3b"
   "2.0.2":
-    url: "https://distfiles.ariadne.space/pkgconf/pkgconf-2.0.2.tar.xz"
+    url: "https://github.com/Hexagon-HTC/pkgconf/archive/refs/tags/pkgconf-2.0.2.tar.gz"
     sha256: "ea5a25ef8f251eb5377ec0e21c75fb61894433cfbdbf0b2559ba33e4c2664401"
   "1.9.5":
-    url: "https://distfiles.ariadne.space/pkgconf/pkgconf-1.9.5.tar.xz"
-    sha256: "1ac1656debb27497563036f7bffc281490f83f9b8457c0d60bcfb638fb6b6171"
+    url: "https://github.com/Hexagon-HTC/pkgconf/archive/refs/tags/pkgconf-1.9.5.tar.gz"
+    sha256: "3fd0ace7d4398d75f0c566759f9beb4f8b3984fee7ed9804d41c52b193d9745a"
   "1.9.3":
-    url: "https://distfiles.ariadne.space/pkgconf/pkgconf-1.9.3.tar.xz"
+    url: "https://github.com/Hexagon-HTC/pkgconf/archive/refs/tags/pkgconf-1.9.3.tar.gz"
     sha256: "5fb355b487d54fb6d341e4f18d4e2f7e813a6622cf03a9e87affa6a40565699d"
   "1.7.4":
-    url: "https://distfiles.ariadne.space/pkgconf/pkgconf-1.7.4.tar.xz"
+    url: "https://github.com/Hexagon-HTC/pkgconf/archive/refs/tags/pkgconf-1.7.4.tar.gz"
     sha256: "d73f32c248a4591139a6b17777c80d4deab6b414ec2b3d21d0a24be348c476ab"
   "1.7.3":
-    url: "https://distfiles.ariadne.space/pkgconf/pkgconf-1.7.3.tar.xz"
+    url: "https://github.com/Hexagon-HTC/pkgconf/archive/refs/tags/pkgconf-1.7.3.tar.gz"
     sha256: "b846aea51cf696c3392a0ae58bef93e2e72f8e7073ca6ad1ed8b01c85871f9c0"
 patches:
   "2.0.3":

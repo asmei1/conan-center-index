@@ -96,7 +96,7 @@ class GflagsConan(ConanFile):
     def package_info(self):
         self.cpp_info.set_property("cmake_file_name", "gflags")
         self.cpp_info.set_property("cmake_target_name", "gflags::gflags")
-        self.cpp_info.set_property("cmake_target_aliases", ["gflags"])
+        #self.cpp_info.set_property("cmake_target_aliases", ["gflags"])
         self.cpp_info.set_property("pkg_config_name", "gflags")
         self.cpp_info.libs = collect_libs(self)
         if self.settings.os == "Windows":

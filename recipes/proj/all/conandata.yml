@@ -1,31 +1,31 @@
 sources:
   "9.3.0":
-    url: "https://github.com/OSGeo/PROJ/archive/9.3.0.tar.gz"
+    url: "https://github.com/Hexagon-HTC/PROJ/archive/refs/tags/9.3.0.tar.gz"
     sha256: "f48c334eaf56c38d681bcfa37f188f422a562f45a66e6e646a79b4249641ecdb"
   "9.2.1":
-    url: "https://github.com/OSGeo/PROJ/releases/download/9.2.1/proj-9.2.1.tar.gz"
-    sha256: "15ebf4afa8744b9e6fccb5d571fc9f338dc3adcf99907d9e62d1af815d4971a1"
+    url: "https://github.com/Hexagon-HTC/PROJ/archive/refs/tags/9.2.1.tar.gz"
+    sha256: "cc1481daee16d8b3a9c3a6f0b0e2f97cd25772f09cccfcffeebfb5d735040405"
   "9.1.1":
-    url: "https://github.com/OSGeo/PROJ/releases/download/9.1.1/proj-9.1.1.tar.gz"
-    sha256: "003cd4010e52bb5eb8f7de1c143753aa830c8902b6ed01209f294846e40e6d39"
+    url: "https://github.com/Hexagon-HTC/PROJ/archive/refs/tags/9.1.1.tar.gz"
+    sha256: "31d7d953837b3bc57fa83df057affa17a3ff7d488ce83784eb53cffbe734463a"
   "9.1.0":
-    url: "https://github.com/OSGeo/PROJ/releases/download/9.1.0/proj-9.1.0.tar.gz"
-    sha256: "81b2239b94cad0886222cde4f53cb49d34905aad2a1317244a0c30a553db2315"
+    url: "https://github.com/Hexagon-HTC/PROJ/archive/refs/tags/9.1.0.tar.gz"
+    sha256: "bb84eae06f9b473a0b9fa5087431503bbf4f6196ffebfa50d176a8e3a525ba23"
   "9.0.1":
-    url: "https://github.com/OSGeo/PROJ/releases/download/9.0.1/proj-9.0.1.tar.gz"
-    sha256: "737eaacbe7906d0d6ff43f0d9ebedc5c734cccc9e6b8d7beefdec3ab22d9a6a3"
+    url: "https://github.com/Hexagon-HTC/PROJ/archive/refs/tags/9.0.1.tar.gz"
+    sha256: "65f965e5ac965a144898343261b3b7cafd50cb5dc1c2ddcc2897e726ba5e289f"
   "9.0.0":
-    url: "https://github.com/OSGeo/PROJ/releases/download/9.0.0/proj-9.0.0.tar.gz"
-    sha256: "0620aa01b812de00b54d6c23e7c5cc843ae2cd129b24fabe411800302172b989"
+    url: "https://github.com/Hexagon-HTC/PROJ/archive/refs/tags/9.0.0.tar.gz"
+    sha256: "435eee54fd4bd7d63abeccb1527d9987017aa30c7a8c2b9309e1be1de156e449"
   "8.2.1":
-    url: "https://github.com/OSGeo/PROJ/releases/download/8.2.1/proj-8.2.1.tar.gz"
-    sha256: "76ed3d0c3a348a6693dfae535e5658bbfd47f71cb7ff7eb96d9f12f7e068b1cf"
+    url: "https://github.com/Hexagon-HTC/PROJ/archive/refs/tags/8.2.1.tar.gz"
+    sha256: "94293e017ce252f2429df5ca09d0bb3d69f648f153d9d234a049f2d0c6c33346"
   "7.2.1":
-    url: "https://github.com/OSGeo/PROJ/releases/download/7.2.1/proj-7.2.1.tar.gz"
-    sha256: "b384f42e5fb9c6d01fe5fa4d31da2e91329668863a684f97be5d4760dbbf0a14"
+    url: "https://github.com/Hexagon-HTC/PROJ/archive/refs/tags/7.2.1.tar.gz"
+    sha256: "29bd55d786d8798cec309b5ff9f1c093f6fbe3fcfa16669796f3433c80cfa45d"
   "6.3.1":
-    url: "https://github.com/OSGeo/PROJ/releases/download/6.3.1/proj-6.3.1.tar.gz"
-    sha256: "6de0112778438dcae30fcc6942dee472ce31399b9e5a2b67e8642529868c86f8"
+    url: "https://github.com/Hexagon-HTC/PROJ/archive/refs/tags/6.3.1.tar.gz"
+    sha256: "1408ce13b796b76c9e70ec1d139e5c22a08810b172037a2a36e857183b1b8b8b"
 patches:
   "9.3.0":
     - patch_file: "patches/0001-use-cmake-targets-9.2.1.patch"

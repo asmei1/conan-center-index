@@ -1,0 +1,67 @@
+--- a/src/cpu.h
++++ b/src/cpu.h
+@@ -4,7 +4,7 @@
+ #include <cstdint>
+ #include <cstring>
+ #include <string>
+-#ifdef __ANDROID__
++#ifdef __aarch64__
+ 
+ #else
+ #if defined(__x86_64__) || defined(_M_X64) || defined(__i386) || defined(_M_IX86)
+@@ -48,7 +48,7 @@
+     static bool inline detect_OS_AVX512();
+     static inline uint64_t xgetbv(unsigned int x);
+ };
+-#ifdef __ANDROID__
++#ifdef __aarch64__
+ 
+ void cpu::cpuid(int32_t out[4], int32_t x){}
+ #else
+@@ -91,7 +91,7 @@
+ ////////////////////////////////////////////////////////////////////////////////
+ bool cpu::detect_OS_AVX(){
+     //  Copied from: http://stackoverflow.com/a/22521619/922184
+-#ifndef __ANDROID__
++#ifndef __aarch64__
+ 
+     bool avxSupported = false;
+     int cpuInfo[4]; cpuid(cpuInfo, 1);
+@@ -105,7 +105,7 @@
+ }
+ bool cpu::detect_OS_AVX512(){
+ 
+-#ifndef __ANDROID__
++#ifndef __aarch64__
+     if (!detect_OS_AVX())
+         return false;
+     uint64_t xcrFeatureMask = xgetbv(_XCR_XFEATURE_ENABLED_MASK);
+@@ -118,7 +118,7 @@
+ std::string cpu::get_vendor_string(){ int32_t CPUInfo[4]; char name[13];cpuid(CPUInfo, 0); memcpy(name + 0, &CPUInfo[1], 4);memcpy(name + 4, &CPUInfo[3], 4); memcpy(name + 8, &CPUInfo[2], 4); name[12] = '\0'; return name;}
+ void cpu::detect_host(){
+ 
+-#ifndef __ANDROID__
++#ifndef __aarch64__
+ 
+     OS_x64 = detect_OS_x64();
+     OS_AVX = detect_OS_AVX();
+--- a/src/fbow.h
++++ b/src/fbow.h
+@@ -6,7 +6,7 @@
+ #include <map>
+ #include <memory>
+ #include <bitset>
+-#ifndef __ANDROID__
++#ifndef __aarch64__
+ #include <immintrin.h>
+ #endif
+ #include "cpu.h"
+@@ -239,7 +239,7 @@
+             return d;
+         }
+     };
+-#ifdef __ANDROID__
++#ifdef __aarch64__
+     //fake elements to allow compilation
+     struct L2_avx_generic:public Lx<uint64_t,float,32>{inline float computeDist(uint64_t *ptr){return std::numeric_limits<float>::max();}};
+     struct L2_se3_generic:public Lx<uint64_t,float,32>{inline float computeDist(uint64_t *ptr){return std::numeric_limits<float>::max();}};

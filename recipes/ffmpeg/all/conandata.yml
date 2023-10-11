@@ -1,25 +1,22 @@
 sources:
   "6.0":
-    url: "https://ffmpeg.org/releases/ffmpeg-6.0.tar.bz2"
-    sha256: "47d062731c9f66a78380e35a19aac77cebceccd1c7cc309b9c82343ffc430c3d"
+    url: "https://github.com/Hexagon-HTC/FFmpeg/archive/refs/tags/n6.0.tar.gz"
+    sha256: "9a1fa94608300e835bf89bdfcd7d77deceba67bff3494f609816f84bd69a459e"
   "5.1":
-    url: "https://ffmpeg.org/releases/ffmpeg-5.1.tar.bz2"
-    sha256: "32b56fb01ce90d452958ae25e91c9564abf49ed5453c127bec23c63e530aa8fa"
+    url: "https://github.com/Hexagon-HTC/FFmpeg/archive/refs/tags/n5.1.tar.gz"
+    sha256: "6ec4823ccf1b9944e7627ecf75e9c185e9239882eaba0f1b594b6c45cbfd55cc"
   "5.0":
-    url: "https://ffmpeg.org/releases/ffmpeg-5.0.tar.bz2"
-    sha256: "c0130b8db2c763430fd1c6905288d61bc44ee0548ad5fcd2dfd650b88432bed9"
+    url: "https://github.com/Hexagon-HTC/FFmpeg/archive/refs/tags/n5.0.tar.gz"
+    sha256: "80eee07ff55952c06c2d8ff642f5298f71eecc797964a45948eac88eb4aae7a3"
   "4.4.3":
-    url: "https://ffmpeg.org/releases/ffmpeg-4.4.3.tar.bz2"
-    sha256: "33b8c2dbcd530fe1db5710415345609b4ca227bd0da1e3a9332dbb0f11fd273a"
+    url: "https://github.com/Hexagon-HTC/FFmpeg/archive/refs/tags/n4.4.3.tar.gz"
+    sha256: "816176e67f485da8e9e26dad36bcb97aa74527d0da562ec4648cd18e0d354d07"
   "4.4":
-    url: "https://ffmpeg.org/releases/ffmpeg-4.4.tar.bz2"
-    sha256: "42093549751b582cf0f338a21a3664f52e0a9fbe0d238d3c992005e493607d0e"
+    url: "https://github.com/Hexagon-HTC/FFmpeg/archive/refs/tags/n4.4.tar.gz"
+    sha256: "bea6d9f91cdbe4c5ad98e0878955ad5077df3883ef321fd4668ee1076de793fe"
   "4.3.2":
-    url: "https://ffmpeg.org/releases/ffmpeg-4.3.2.tar.bz2"
-    sha256: "ab3a6d6a70358ba0a5f67f37f91f6656b7302b02e98e5b8c846c16763c99913a"
-  "4.2.1":
-    url: "https://ffmpeg.org/releases/ffmpeg-4.2.1.tar.bz2"
-    sha256: "682a9fa3f6864d7f0dbf224f86b129e337bc60286e0d00dffcd710998d521624"
+    url: "https://github.com/Hexagon-HTC/FFmpeg/archive/refs/tags/n4.3.2.tar.gz"
+    sha256: "d9b650a5aaaa6e2907a5578135b715ca532896fe9a6dc7a823c25f89790ff1ed"
 patches:
   "5.1":
     - patch_file: "patches/5.0-0001-fix-hwcontext_vulkan.patch"

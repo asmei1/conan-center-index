@@ -1,19 +1,19 @@
 sources:
   "4.6.0":
-    url: "http://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz"
-    sha256: "88b3979e6d5c7e32b50d7ec72fb15af724f6ab2cbf7e10880c360a77e4b5d99a"
+    url: "https://github.com/Hexagon-HTC/libtiff/archive/refs/tags/v4.6.0.tar.gz"
+    sha256: "c760de148e0b2ceec115dd5afa660e91617aac4a94da997aa8a8fc2a58f1d378"
   "4.5.1":
-    url: "http://download.osgeo.org/libtiff/tiff-4.5.1.tar.gz"
-    sha256: "d7f38b6788e4a8f5da7940c5ac9424f494d8a79eba53d555f4a507167dca5e2b"
+    url: "https://github.com/Hexagon-HTC/libtiff/archive/refs/tags/v4.5.1.tar.gz"
+    sha256: "9ee27c0cdb033eed3d4c7dee8963e51552beb76e7a41245f42b9e583b4a5d33f"
   "4.5.0":
-    url: "http://download.osgeo.org/libtiff/tiff-4.5.0.tar.gz"
-    sha256: "c7a1d9296649233979fa3eacffef3fa024d73d05d589cb622727b5b08c423464"
+    url: "https://github.com/Hexagon-HTC/libtiff/archive/refs/tags/v4.5.0.tar.gz"
+    sha256: "e54df595baaf57adf51bf5778b59611c1d4600f1eb90f7bc58923425b395319c"
   "4.4.0":
-    url: "http://download.osgeo.org/libtiff/tiff-4.4.0.tar.gz"
-    sha256: "917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed"
+    url: "https://github.com/Hexagon-HTC/libtiff/archive/refs/tags/v4.4.0.tar.gz"
+    sha256: "4580f8213c62c78b15fd49862bc1b55f390dc06ea31b6332e63c2559f0521cf0"
   "4.3.0":
-    url: "http://download.osgeo.org/libtiff/tiff-4.3.0.tar.gz"
-    sha256: "0e46e5acb087ce7d1ac53cf4f56a09b221537fc86dfc5daaad1c2e89e1b37ac8"
+    url: "https://github.com/Hexagon-HTC/libtiff/archive/refs/tags/v4.3.0.tar.gz"
+    sha256: "ca0ec4108f91198cd930e57b24eb2bddf5381312ed31b9f2d320c2e700e256fe"
 patches:
   "4.6.0":
     - patch_file: "patches/4.5.1-0001-cmake-dependencies.patch"

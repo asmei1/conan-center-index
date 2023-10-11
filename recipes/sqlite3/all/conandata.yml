@@ -42,5 +42,5 @@ sources:
     url: "https://sqlite.org/2022/sqlite-amalgamation-3370200.zip"
     sha256: "cb25df0fb90b77be6660f6ace641bbea88f3d0441110d394ce418f35f7561bb0"
   "3.36.0":
-    url: "https://sqlite.org/2021/sqlite-amalgamation-3360000.zip"
-    sha256: "999826fe4c871f18919fdb8ed7ec9dd8217180854dd1fe21eea96aed36186729"
+    url: "https://github.com/Hexagon-HTC/sqlite/archive/refs/tags/version-3.36.0.tar.gz"
+    sha256: "a0989fc6e890ac1b1b28661490636617154da064b6bfe6c71100d23a9e7298fd"

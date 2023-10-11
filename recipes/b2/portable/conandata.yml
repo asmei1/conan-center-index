@@ -1,67 +1,67 @@
 sources:
   "4.3.0":
-    sha256: 138c90b66edb0a28e225705a2cbf897a8cef5f87e68befc748f8e6808e21628a
-    url: https://github.com/bfgroup/b2/archive/4.3.0.tar.gz
+    sha256: "36587ab2852c4340335b42abcbbebedfb58d337f8f36962d751be7823661060a"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.3.0.tar.gz"
   "4.4.0":
-    sha256: fa4079370644110604895ff08057fe2eff3289bcffdaec55fcdf43ea33ff25a8
-    url: https://github.com/bfgroup/b2/archive/4.4.0.tar.gz
+    sha256: "02685448655bc3b7dec875e3141d1b8e58182171360033e752d9ac8c8b9dae01"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.4.0.tar.gz"
   "4.4.1":
-    sha256: 4fb15abd994968a24868c13502f080c4a28b20f59831acf9eabd64a3b257554f
-    url: https://github.com/bfgroup/b2/archive/4.4.1.tar.gz
+    sha256: "ea2a69fc1280d83fa4c79fa328989972843f18edf1b186ffa90f1e7d7b443f16"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.4.1.tar.gz"
   "4.4.2":
-    sha256: 575e59b89191a6a6780d7165cae3222b8a7a1e7d5e8165b3524eefe32fc3de46
-    url: https://github.com/bfgroup/b2/archive/4.4.2.tar.gz
+    sha256: "3e4d76775885e95bb1a3d6bf94751f8d8e0126c50d64b9adbea8719476617304"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.4.2.tar.gz"
   "4.5.0":
-    url: "https://github.com/bfgroup/b2/archive/4.5.0.tar.gz"
-    sha256: "39c3b51bf9c5f32b1c249d2d405274976b166e1bdca1fc5205b595f1cb5dbac3"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.5.0.tar.gz"
+    sha256: "8539c9f2d951cdd4784292797746a78eed79dcaa91ecd651c3ea574251eac5af"
   "4.6.0":
-    url: "https://github.com/bfgroup/b2/archive/4.6.0.tar.gz"
-    sha256: "3a308e0f79a039d8a9495b375f3292f5163000c19caa79c5687e4cb5b1938b49"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.6.0.tar.gz"
+    sha256: "2e2ac896c0fe94e4902e12d64bf43a7af730012137171169e1deab107f8a7516"
   "4.6.1":
-    url: "https://github.com/bfgroup/b2/archive/4.6.1.tar.gz"
-    sha256: "a3f3323eaeb2c27d7a3ca86842665c6c3bc3d93cc626ba362ae6d0c5a7bfbe2c"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.6.1.tar.gz"
+    sha256: "e3d79d95e9dd561a3b41c084e3b0902858b3abe3de19c395e223b7e7f88670fe"
   "4.7.0":
-    url: "https://github.com/bfgroup/b2/archive/4.7.0.tar.gz"
-    sha256: "82c2eb92d6ab2bd447646568ac8430c316cbd2a1819c108136224498c0abed84"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.7.0.tar.gz"
+    sha256: "a10079e2a41fbba812a027072d586b15571b8e3714048f7ab2aac20393143de3"
   "4.7.1":
-    url: "https://github.com/bfgroup/b2/archive/4.7.1.tar.gz"
-    sha256: "30844184ded3217c090b76e6e051c3ac663ea63bd19e1b727b05c54411cac867"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.7.1.tar.gz"
+    sha256: "018c9da7423aa08d0458ab2015c3737dde2b86735c9eac5556655eeb5d6c72d5"
   "4.7.2":
-    url: "https://github.com/bfgroup/b2/archive/4.7.2.tar.gz"
-    sha256: "70883f8ed82efc49f425f1961a82e961cefdbca3a28581cb57b405bd7516677f"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.7.2.tar.gz"
+    sha256: "bf71371f569fc85b940fcdc59a520aa9b4c0309a03083742a15b72eba98ab253"
   "4.8.0":
-    url: "https://github.com/bfgroup/b2/archive/4.8.0.tar.gz"
-    sha256: "2f18951d4cc267a810e44fc483b747d489e30ed42ee6d9e7c5e19de750ee5cd2"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.8.0.tar.gz"
+    sha256: "1d2367b61ab9c3860ea1989ef982176fca5dcdd724d6a34aa33e13e13f54c748"
   "4.8.1":
-    url: "https://github.com/bfgroup/b2/archive/4.8.1.tar.gz"
-    sha256: "8ecff1025df9473d91a0d116af3e32be6fba6e57d4ea962e033ff1678609d668"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.8.1.tar.gz"
+    sha256: "c00f1eb736bcb7a54f2bbb8f75fd6065c68aa912ae3092edcfe2709a37795a80"
   "4.8.2":
-    url: "https://github.com/bfgroup/b2/archive/4.8.2.tar.gz"
-    sha256: "220edfbd5022394c5dc264dfdd8bf6d3ec53b784db87461026bb23ea9d9ec4bd"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.8.2.tar.gz"
+    sha256: "d9297bfbd238a1176b0621ab394092a9ffb9efe3d38146ba100deec6f51eea62"
   "4.9.0":
-    url: "https://github.com/bfgroup/b2/archive/4.9.0.tar.gz"
-    sha256: "7c614e41f10e004c7539c75c60f7b2df26a61fe35058e9021f8fd5049c97a255"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.9.0.tar.gz"
+    sha256: "dff8c71becf2fc06247125611a79b60f6a307b1cdff18eac800f4b8e56db42ce"
   "4.9.1":
-    url: "https://github.com/bfgroup/b2/archive/4.9.1.tar.gz"
-    sha256: "81e49dc85e956c3e708bdd02fcfe0b9f406fca8edca54c75c94ebd6c322ed587"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.9.1.tar.gz"
+    sha256: "1ca8e9fe8ae7f5bffc264cc625642b5f61062476ac48a6d4bf4a23b2204f9a6e"
   "4.9.2":
-    url: "https://github.com/bfgroup/b2/archive/4.9.2.tar.gz"
-    sha256: "7e1a135b308999d2a65fce3eba8f4ffb41ca82ae133f8494cc42cbca63c890de"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.9.2.tar.gz"
+    sha256: "c66915ec06ea639e307d980d9998170f5d01544f316ec6ed7a43cc96f769deb8"
   "4.9.3":
-    url: "https://github.com/bfgroup/b2/archive/4.9.3.tar.gz"
-    sha256: "4524b8ecf138a9087aa24b8889c44ea7ae9f2d373acc9535d72fb048c213e1b9"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.9.3.tar.gz"
+    sha256: "d2943fa533848346422c0be2f3d2323887744ddc02a4a33b0dc3c34cb70e5ef6"
   "4.9.4":
-    url: "https://github.com/bfgroup/b2/releases/download/4.9.4/b2-4.9.4.tar.bz2"
-    sha256: "1996d8098955ad3fdecab242d784afaef0fba80dd5d2ef0b3a41592e26772312"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.9.4.tar.gz"
+    sha256: "a0b875e0fdf8c046bb46b347fe818dfec4cbb424c63227780c4f70b15e29b9b8"
   "4.9.5":
-    url: "https://github.com/bfgroup/b2/releases/download/4.9.5/b2-4.9.5.tar.bz2"
-    sha256: "f81bea44601613f633d3311341f3f63594608537bf38d7073b877ec1edb2760a"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.9.5.tar.gz"
+    sha256: "37f74ab7cfc5a6ff0ef1ce53d4ce871414c269556e72ac9a00cfea471b0788c4"
   "4.9.6":
-    url: "https://github.com/bfgroup/b2/releases/download/4.9.6/b2-4.9.6.tar.bz2"
-    sha256: "10c1344c751fcf5a1f9ec6f52c02626cfbf78a4806f7817949b115e107bbbc5f"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.9.6.tar.gz"
+    sha256: "ea223be60d0abef3df494f59a88ca58b4e6ac22a1fa393c831635b741f46936b"
   "4.10.0":
-    url: "https://github.com/bfgroup/b2/releases/download/4.10.0/b2-4.10.0.tar.bz2"
-    sha256: "aee0185473141d4acb56e39c78758b1016e66393ea5ca86ef29403bd9258f2e2"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.10.0.tar.gz"
+    sha256: "f86b0565ec34f13de00581d6788c856d22ee2418cf4428abfe38b3629bc15d96"
   "4.10.1":
-    url: "https://github.com/bfgroup/b2/releases/download/4.10.1/b2-4.10.1.tar.bz2"
-    sha256: "d0818276955c3351eac26e4aa1e61046cfded88773232d76f2833c93bb917633"
+    url: "https://github.com/Hexagon-HTC/b2_original/archive/refs/tags/4.10.1.tar.gz"
+    sha256: "fc93856e2baec05fee0431d4c33472860b0bbc3cc3b46e485d8b4d48d32a0c3e"

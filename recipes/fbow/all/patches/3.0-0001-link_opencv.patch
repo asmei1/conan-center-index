@@ -1,0 +1,11 @@
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -29,7 +29,7 @@
+             DESTINATION include/fbow
+             COMPONENT main)
+ ENDIF()
+-
++target_link_libraries(fbow PUBLIC opencv_core)
+ 
+ #set(sources
+ #    fbow.cpp

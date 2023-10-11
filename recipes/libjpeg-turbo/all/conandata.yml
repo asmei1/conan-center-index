@@ -1,10 +1,10 @@
 sources:
   "3.0.0":
-    url: "https://sourceforge.net/projects/libjpeg-turbo/files/3.0.0/libjpeg-turbo-3.0.0.tar.gz"
-    sha256: "c77c65fcce3d33417b2e90432e7a0eb05f59a7fff884022a9d931775d583bfaa"
+    url: "https://github.com/Hexagon-HTC/libjpeg-turbo/archive/refs/tags/3.0.0.tar.gz"
+    sha256: "171dae5d73560bc94006a7c0c3281bd9bfde6a34f7e41e66f930a1a9162bd7df"
   "2.1.5":
-    url: "https://sourceforge.net/projects/libjpeg-turbo/files/2.1.5/libjpeg-turbo-2.1.5.tar.gz"
-    sha256: "bc12bc9dce55300c6bf4342bc233bcc26bd38bf289eedf147360d731c668ddaf"
+    url: "https://github.com/Hexagon-HTC/libjpeg-turbo/archive/refs/tags/2.1.5.tar.gz"
+    sha256: "254f3642b04e309fee775123133c6464181addc150499561020312ec61c1bf7c"
   "2.0.6":
-    url: "https://sourceforge.net/projects/libjpeg-turbo/files/2.0.6/libjpeg-turbo-2.0.6.tar.gz"
-    sha256: "d74b92ac33b0e3657123ddcf6728788c90dc84dcb6a52013d758af3c4af481bb"
+    url: "https://github.com/Hexagon-HTC/libjpeg-turbo/archive/refs/tags/2.0.6.tar.gz"
+    sha256: "005aee2fcdca252cee42271f7f90574dda64ca6505d9f8b86ae61abc2b426371"
