@@ -1,38 +1,25 @@
 sources:
   1.0.2u:
-    sha256: ecd0c6ffb493dd06707d38b14bb4d8c2288bb7033735606569d8f90f89669d16
-    url:
-      - "https://www.openssl.org/source/openssl-1.0.2u.tar.gz"
-      - "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz"
+    sha256: 82fa58e3f273c53128c6fe7e3635ec8cda1319a10ce1ad50a987c3df0deeef05
+    url: "https://github.com/Hexagon-HTC/openssl/archive/refs/tags/OpenSSL_1_0_2u.tar.gz"
   1.1.0l:
-    sha256: 74a2f756c64fd7386a29184dc0344f4831192d61dc2481a93a4c5dd727f41148
-    url:
-      - "https://www.openssl.org/source/openssl-1.1.0l.tar.gz"
-      - "https://www.openssl.org/source/old/1.1.0/openssl-1.1.0l.tar.gz"
+    sha256: e2acf0cf58d9bff2b42f2dc0aee79340c8ffe2c5e45d3ca4533dd5d4f5775b1d
+    url: "https://github.com/Hexagon-HTC/openssl/archive/refs/tags/OpenSSL_1_1_0l.tar.gz"
   1.1.1t:
-    sha256: 8dee9b24bdb1dcbf0c3d1e9b02fb8f6bf22165e807f45adeb7c9677536859d3b
-    url:
-      - "https://www.openssl.org/source/openssl-1.1.1t.tar.gz"
-      - "https://www.openssl.org/source/old/1.1.1/openssl-1.1.1t.tar.gz"
-      - "https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1t/openssl-1.1.1t.tar.gz"
+    sha256: b1270f044e36452e15d1f2e18b702691a240b0445080282f2c7daaea8704ec5e
+    url: "https://github.com/Hexagon-HTC/openssl/archive/refs/tags/OpenSSL_1_1_1t.tar.gz"
   1.1.1u:
-    sha256: e2f8d84b523eecd06c7be7626830370300fbcc15386bf5142d72758f6963ebc6
-    url:
-      - "https://www.openssl.org/source/openssl-1.1.1u.tar.gz"
-      - "https://www.openssl.org/source/old/1.1.1/openssl-1.1.1u.tar.gz"
-      - "https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1u/openssl-1.1.1u.tar.gz"
+    sha256: fafe27202bde4238dce258d82ec8a8592a657842e5431264620a933a0c9436b7
+    url: "https://github.com/Hexagon-HTC/openssl/archive/refs/tags/OpenSSL_1_1_1u.tar.gz"
   1.1.1v:
-    sha256: d6697e2871e77238460402e9362d47d18382b15ef9f246aba6c7bd780d38a6b0
-    url:
-      - "https://www.openssl.org/source/openssl-1.1.1v.tar.gz"
-      - "https://www.openssl.org/source/old/1.1.1/openssl-1.1.1v.tar.gz"
-      - "https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1v/openssl-1.1.1v.tar.gz"
+    sha256: c0bb03960ba535e51726950853f0e01a0a92e107e202f417e7546ee5e59baee0
+    url: "https://github.com/Hexagon-HTC/openssl/archive/refs/tags/OpenSSL_1_1_1v.tar.gz"
   1.1.1w:
-    sha256: cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
-    url:
-      - "https://www.openssl.org/source/openssl-1.1.1w.tar.gz"
-      - "https://www.openssl.org/source/old/1.1.1/openssl-1.1.1w.tar.gz"
-      - "https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1w/openssl-1.1.1w.tar.gz"
+    sha256: 2130e8c2fb3b79d1086186f78e59e8bc8d1a6aedf17ab3907f4cb9ae20918c41
+    url: "https://github.com/Hexagon-HTC/openssl/archive/refs/tags/OpenSSL_1_1_1w.tar.gz"
+  1.1.1d:
+    sha256: 23011a5cc78e53d0dc98dfa608c51e72bcd350aa57df74c5d5574ba4ffb62e74
+    url: "https://github.com/Hexagon-HTC/openssl/archive/refs/tags/OpenSSL_1_1_1d.tar.gz"
 patches:
   1.0.2u:
     - patch_file: patches/1.0.2u-darwin-arm64.patch
