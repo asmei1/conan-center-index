@@ -368,6 +368,9 @@ class OpenCVConan(ConanFile):
         def vulkan():
             return ["vulkan-headers::vulkan-headers"] if self.options.get_safe("with_vulkan") else []
 
+        def protobuf():
+            return ["protobuf::protobuf"] if self.settings.os != "Android" else []
+
         def opencv_calib3d():
             return ["opencv_calib3d"] if self.options.calib3d else []
 
@@ -442,7 +445,7 @@ class OpenCVConan(ConanFile):
             "dnn": {
                 "is_built": self.options.dnn,
                 "mandatory_options": ["imgproc"],
-                "requires": ["opencv_core", "opencv_imgproc", "protobuf::protobuf"] + vulkan() + ipp(),
+                "requires": ["opencv_core", "opencv_imgproc"] + vulkan() + ipp() + protobuf(),
             },
             "features2d": {
                 "is_built": self.options.features2d,
@@ -1016,7 +1019,7 @@ class OpenCVConan(ConanFile):
         if self.options.with_ipp == "intel-ipp":
             self.requires("intel-ipp/2020")
         # dnn module dependencies
-        if self.options.dnn:
+        if self.options.dnn and self.settings.os != "Android":
             # Symbols are exposed https://github.com/conan-io/conan-center-index/pull/16678#issuecomment-1507811867
             self.requires(f"protobuf/{self._protobuf_version}", transitive_libs=True, run=can_run(self))
         if self.options.get_safe("with_vulkan"):
@@ -1127,10 +1130,6 @@ class OpenCVConan(ConanFile):
                 "viz module can't be enabled yet. It requires VTK which is not available in conan-center."
             )
 
-    def build_requirements(self):
-        if self.options.dnn and not can_run(self):
-            self.tool_requires(f"protobuf/{self._protobuf_version}")
-
     def source(self):
         get(self, **self.conan_data["sources"][self.version][0], strip_root=True)
 
@@ -1139,8 +1138,11 @@ class OpenCVConan(ConanFile):
 
     def _patch_sources(self):
         apply_conandata_patches(self)
-        for directory in ["libjasper", "libjpeg-turbo", "libjpeg", "libpng", "libtiff", "libwebp", "openexr", "protobuf", "zlib", "quirc"]:
+        for directory in ["libjasper", "libjpeg-turbo", "libjpeg", "libpng", "libtiff", "libwebp", "openexr", "zlib", "quirc"]:
             rmdir(self, os.path.join(self.source_folder, "3rdparty", directory))
+
+        if self.settings.os != "Android":
+            rmdir(self, os.path.join(self.source_folder, "3rdparty", "protobuf"))
 
         replace_in_file(self, os.path.join(self.source_folder, "CMakeLists.txt"), "ANDROID OR NOT UNIX", "FALSE")
         replace_in_file(self, os.path.join(self.source_folder, "CMakeLists.txt"), "elseif(EMSCRIPTEN)", "elseif(QNXNTO)\nelseif(EMSCRIPTEN)")
@@ -1161,7 +1163,7 @@ class OpenCVConan(ConanFile):
                               "")
         replace_in_file(self, install_layout_file, "set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)", "")
 
-        if self.options.dnn:
+        if self.options.dnn and self.settings.os != "Android":
             find_protobuf = os.path.join(self.source_folder, "cmake", "OpenCVFindProtobuf.cmake")
             # OpenCV expects to find FindProtobuf.cmake, not the config file
             replace_in_file(self, find_protobuf,
@@ -1172,7 +1174,6 @@ class OpenCVConan(ConanFile):
                 replace_in_file(self, find_protobuf,
                                       'if(TARGET "${Protobuf_LIBRARIES}")',
                                       'if(FALSE)  # patch: disable if(TARGET "${Protobuf_LIBRARIES}")')
-
         if self.options.freetype:
             freetype_cmake = os.path.join(self._contrib_folder, "modules", "freetype", "CMakeLists.txt")
             replace_in_file(self, freetype_cmake, "ocv_check_modules(FREETYPE freetype2)", "find_package(Freetype REQUIRED MODULE)")
@@ -1210,7 +1211,7 @@ class OpenCVConan(ConanFile):
         tc.variables["BUILD_OPENEXR"] = False
         tc.variables["BUILD_OPENJPEG"] = False
         tc.variables["BUILD_TESTS"] = False
-        tc.variables["BUILD_PROTOBUF"] = False
+        tc.variables["BUILD_PROTOBUF"] = True if self.settings.os == "Android" else False
         tc.variables["BUILD_PACKAGE"] = False
         tc.variables["BUILD_PERF_TESTS"] = False
         tc.variables["BUILD_USE_SYMLINKS"] = False
@@ -1333,7 +1334,7 @@ class OpenCVConan(ConanFile):
             tc.variables[f"BUILD_opencv_{module}"] = self.options.get_safe(module, False)
         tc.variables["WITH_PROTOBUF"] = self.options.dnn
         if self.options.dnn:
-            tc.variables["PROTOBUF_UPDATE_FILES"] = True
+            tc.variables["PROTOBUF_UPDATE_FILES"] = False if self.settings.os == "Android" else True
         tc.variables["WITH_ADE"] = self.options.gapi
         if self.options.objdetect:
             tc.variables["HAVE_QUIRC"] = self.options.with_quirc  # force usage of quirc requirement
